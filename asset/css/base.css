@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --white-color:white;
+    --black-color:black;
+    --text-color:#333;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+body{
+    margin: 0;
+}
+.btn
+{
+    color: var(--white-color);
+    padding:8px 12px;
+    border-radius: 6px;
+}
+.btn:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
+}
