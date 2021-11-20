@@ -1,0 +1,109 @@
+.hero-mobile
+{
+    display: none;
+}
+.text-color
+{
+    color:rgb(194, 168, 172);
+}
+.row
+{
+    margin: 0;
+}
+.container
+{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    background-image: url(../image/4/bg-pattern-desktop.svg);
+    
+}
+
+.body-image img
+{
+    width: 100%;
+}
+.body-content
+{
+    padding:5% 10% 9% 10%;
+    display: flex;
+    flex-direction: column;
+}
+.body-content-heading
+{
+    font-weight: lighter;
+    line-height: 6rem;
+    letter-spacing: 1.8rem;
+    font-size: 5rem;
+}
+.form-group input:focus
+{
+    outline: none;
+}
+.form-group
+{
+    width: fit-content;
+    position: relative;
+}
+.form-group input
+{
+    padding:10px 9em 10px 30px;
+    border-radius: 20px;
+    border:1px solid #F6B0AF;
+}
+.form-group .email-btn
+{
+    
+    padding:10px 25px;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    border: 1px solid #F6B0AF;
+    background-color: #F6B0AF;
+    font-weight: 600;
+}
+.body-content-group
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex:1;
+    justify-content: center;
+}
+
+@media (max-width:739px)
+{
+    .hidden-on-mobile
+    {
+        display: none;
+    }
+    .show-on-mobile
+    {
+        display: block ;
+    }
+    .body-content
+    {
+        padding: 0;
+    }
+    .body-content-logo
+    {
+        padding:20px 50px;
+    }
+    .hero-mobile img
+    {
+        width: 100%;
+    }
+    .body-content-group
+    {
+        text-align: center;
+        padding:30px;
+    }
+    .form-group
+    {
+        margin: 0 auto;
+    }
+    .form-group input
+    {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}

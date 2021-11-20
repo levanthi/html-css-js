@@ -1,0 +1,88 @@
+.container
+{
+    font-size: 1.3rem;
+    color: white;
+    background-image: url("../image/5/bg-intro-desktop.png");
+    background-color: rgb(255, 121, 120);
+    background-origin: border-box;
+    padding:8%;
+    box-sizing: border-box;
+}
+.form-container
+{
+    text-align: center;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-heading
+{
+    line-height: 4rem;
+    font-size: 3.5rem;
+}
+.introduce-link
+{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding:14px;
+    background-color: rgb(93, 84, 163);
+    border-radius: 8px;
+    box-shadow: 0px 4px 2px rgb(63, 63, 63);
+}
+form
+{
+    padding:30px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.form-input
+{
+    padding:10px 14px;
+    border-radius: 6px;
+    border:1px solid #9999;
+}
+.form-input+.form-input
+{
+    margin-top: 25px;
+}
+.form-btn
+{
+    margin: 25px 0;
+    background-color: rgb(55, 204, 138);
+    border: unset;
+    padding:10px 0;
+    font-weight: 550;
+}
+.form-policy
+{
+    color: #9999;
+    margin-top: 0;
+}
+.form-policy-link
+{
+    text-decoration: none;
+    color: rgb(255, 121, 120);
+}
+@media (max-width:739px)
+{
+    .row
+    {
+        flex-direction: column;
+    }
+    .container
+    {
+        text-align: center;
+        background-image: url("../image/5/bg-intro-mobile.png");
+    }
+    form
+    {
+        padding:16px;
+    }
+}

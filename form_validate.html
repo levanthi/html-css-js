@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/form_validate.css">
+    <title>Form validator</title>
+</head>
+<body>
+    
+    <form action="POST" id="form-1" autocomplete="off">
+        <div class="form-header">
+            <h1 class="form-heading" contenteditable="false">
+                Đăng kí thành viên
+            </h1>
+            <p class="form-para">
+                Cùng nhau học lập trình miễn phí tại f8
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Tên đầy đủ</label>
+            <input type="text" name="name" id="name" placeholder="VD: Lê Văn Thi">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="VD: example@gmail.com">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input type="password" name="password" id="password" placeholder="Mật khẩu">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="password_confirmation">Nhập lại mật khẩu</label>
+            <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Nhập lại mật khẩu">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Giới tính</label>
+            <div>
+                <input type="radio" name="gender" value="male">Nam
+            </div>
+            <div>
+                <input type="radio" name="gender" value="female">Nu
+            </div>
+            <div>
+                <input type="radio" name="gender" value="other">Khac
+            </div>
+            <span class="error-message"></span>
+        </div>
+
+        <button class="button">Đăng ký</button>
+
+    </form>
+
+    <script src="./js/validator.js"></script>
+    <script>
+        Validator({
+            form:"#form-1",
+            formGroup:".form-group",
+            errorElement:'.error-message',
+            rules:[
+                Validator.isRequire("#name","vui lòng nhập tên đầy đủ"),
+                Validator.isRequire("#email","vui lòng nhập email"),
+                Validator.isEmail("#email","vui lòng nhập email chính xác"),
+                Validator.minLength("#password",6,"mật khẩu phải tối thiểu 6 kí tự"),
+                Validator.minLength("#password_confirmation",6,"mật khẩu phải tối thiểu 6 kí tự"),
+                Validator.confirm("#password_confirmation",function()
+                {
+                    return document.querySelector(`#form-1 #password`).value
+                },"mật khẩu xác nhận không chính xác"),
+                Validator.isRequire("#form-1 input[name='gender']","Vui lòng chọn giới tính"),
+                // Validator.isRequire("#form-1 #city option[name='city']"),
+            ],
+            onSubmit:function(data)
+            {
+                console.log(data)
+            }
+        })
+    </script>
+</body>
+</html>

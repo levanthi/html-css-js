@@ -1,0 +1,96 @@
+body 
+{
+    display: flex;
+    margin: auto;
+    background-color: rgb(216, 216, 216);
+}
+form
+{
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 4px #c5c5c5;
+    margin: auto;
+    text-align: center;
+    padding:40px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.form-heading
+{
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+.form-para
+{
+    color: #888;
+}
+.form-group
+{
+    margin: 20px 0;
+}
+.form-group label
+{
+    display: block;
+    text-align: left;
+    padding:10px 0;
+}
+.form-group input
+{
+    padding:8px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border:2px solid #999;
+}
+.form-group input:focus
+{
+    outline: none;
+    border:2px rgb(24, 157, 142) solid;
+}
+.form-group span
+{
+    text-align: left;
+    font-size: 0.9rem;
+    display: block;
+    font-weight: lighter;
+}
+form button
+{
+    padding:10px 0;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(27, 194, 177);
+    border: none;
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+form button:hover
+{
+    background-color: rgb(64, 240, 219);
+    cursor: pointer;
+}
+
+.invalid span{
+    color: red;
+}
+.invalid input
+{
+    border: 2px solid red;
+}
+.form-group div
+{
+    text-align: left;
+}
+.form-group input[name="gender"]
+{
+    width: fit-content;
+    display: inline-block;
+    margin: 8px 14px;
+}

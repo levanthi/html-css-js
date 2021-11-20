@@ -1,0 +1,415 @@
+.container
+{
+    background-color: rgb(27, 35, 48);
+    color: white;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+
+}
+h1
+{
+    line-height: 4.5rem;
+    font-size: 4rem;
+}
+a:hover
+{
+    cursor: pointer;
+    color: rgb(56, 165, 205) !important;
+}
+/* Navbar */
+.navbar
+{
+    padding:40px 6%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-list
+{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+.navbar-item a
+{
+    display: block;
+    padding:10px 30px;
+    color: white;
+    text-decoration: none;
+}
+/* header */
+.header
+{
+    padding:120px 0;
+    background-image: url("../image/8/bg-curvy-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+/* Body */
+.body
+{
+    padding:0 6%;
+    background-color: rgb(24, 30, 42);
+    position: relative;
+    overflow: visible;
+}
+/* Intro */
+.section-intro
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section-intro-heading
+{
+    max-width: 750px;
+    font-size: 4rem;
+}
+.section-intro-content
+{
+    font-size: 1.9rem;
+    max-width: 590px;
+}
+.section-intro-btn
+{
+    padding:15px 90px;
+    margin: 10px auto;
+    color: white;
+    background-color: rgb(83, 190, 203);
+    border-radius: 25px;
+    border: unset;
+}
+
+/* Function */
+.section-function
+{
+    text-align: center;
+    padding:0px 70px;
+}
+.function-item-param
+{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-function-row+.section-function-row
+{
+    margin-top: 70px;
+}
+.section-illustration-item
+{
+    align-self: center;
+}
+.section-illustration-item a
+{
+    width: fit-content;
+    color: rgb(71, 159, 172);
+    display: block;
+    text-decoration: none;
+    border-bottom: solid 1px rgb(71, 159, 172);
+}
+
+/* Comments */
+.section-comments
+{
+    padding:120px 6%;
+    font-size: 1.7rem;
+}
+.section-comments .row
+{
+    position: relative;
+}
+.row .quotes
+{
+    position: absolute;
+    top: -44px;
+    left: 9px;
+}
+.section-comments-item
+{
+    flex: 1;
+    background-color: rgb(32, 42, 60);
+    padding:40px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    margin: 0 20px;
+    border-radius: 5px;
+
+}
+.comment-user
+{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.comment-user img
+{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.user-description
+{
+    font-size: 1.4rem;
+}
+
+.subcribe
+{
+    width: 65%;
+    margin: 0 auto;
+    background-color: rgb(28, 36, 49);
+    text-align: center;
+    padding:30px 8%;
+    transform: translateY(50%);
+    border-radius: 5px;
+}
+.subcribe-heading
+{
+    font-size: 3rem;
+}
+.subcribe-para
+{
+    font-size: 1.5rem;
+}
+.input-group
+{
+    display: flex;
+    box-sizing: border-box;
+    padding:18px 0;
+    justify-content: space-between;
+}
+.subcribe input
+{
+    width: 70%;
+    padding:9px 30px;
+    border-radius: 25px;
+}
+.subcribe button
+{
+    border-radius: 25px;
+    width: 25%;
+    background-color: rgb(77, 194, 210);
+    color: white;
+}
+
+/* Footer */
+.footer
+{
+    padding:100px 6%;
+    background-color: rgb(11, 21, 35);
+}
+.footer-logo
+{
+    padding:90px 0 30px;
+}
+.contact-item
+{
+    display: flex;
+}
+.contact-item img
+{
+    height: 25px;
+}
+.contact-item span
+{
+    padding:0 25px;
+}
+.contact-item:nth-child(2)  
+{
+    flex-direction: column;
+}
+.contact-item-group + .contact-item-group
+{
+    padding-top: 20px;
+}
+.contact-item ul
+{
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+.contact-item ul a
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.contact-item-link +.contact-item-link
+{
+    padding-top:20px;
+}
+.contact-item:last-child
+{
+    justify-content: center;
+}
+.contact-item i
+{
+    font-size: 4rem;
+    padding:0 12px;
+}
+.contact-item a
+{
+    color: white;
+}
+
+@media (max-width:739px)
+{
+    h1
+    {
+        font-size: 3rem;
+    }
+    .container
+    {
+        overflow: hidden;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+    .navbar
+    {
+        padding:20px 20px;
+    }
+    .navbar-item a
+    {
+        padding:4px 10px;
+    }
+    .navbar img
+    {
+        width: 100px;
+    }
+    .header
+    {
+        padding:20px;
+        background-image: unset;
+        background-color: rgb(24, 30, 42);
+    }
+    .section-intro img
+    {
+        width: 100%;
+    }
+    .section-intro-heading
+    {
+        font-size: 3rem;
+        background-image: url("../image/8/bg-curvy-mobile.svg");
+        
+    }
+    .section-intro-content
+    {
+        font-size: 1.5rem;
+    }
+
+    .body
+    {
+        padding:20px;
+    }
+    .section-function
+    {
+        padding:0;
+    }
+    .section-function-row
+    {
+        flex-direction: column;
+    }
+    .function-item
+    {
+        padding:30px 5px;
+    }
+    .section-function-row+.section-function-row
+    {
+        margin: 0;
+    }
+    .section-illustration-row
+    {
+        flex-direction: column;
+    }
+    .section-illustration-item-heading
+    {
+        font-size: 2rem;
+    }
+    .section-illustration-item img
+    {
+        width: 100%;
+    }
+    .section-illustration-link
+    {
+        display: flex !important;
+    }
+    .section-illustration-link img
+    {
+        padding-top:3px;
+        padding-left:3px;
+        padding-bottom:3px;
+        width: auto;
+    }
+    .section-comments
+    {
+        padding:100px 0;
+    }
+    .section-comments .row
+    {
+        flex-direction: column;
+    }
+    .row .quotes
+    {
+        width: 30px;
+        top: -24px;
+        left: 20px;
+    }
+    .section-comments-item
+    {
+        padding:30px 25px;
+    }
+    .section-comments-item+.section-comments-item
+    {
+        margin-top: 30px;
+    }
+    .subcribe
+    {
+        margin: 0;
+        width: 100%;
+    }
+    .subcribe-heading
+    {
+        font-size: 2.5rem;
+    }
+    .input-group
+    {
+        flex-direction: column;
+    }
+    .input-group input{
+        width: 100%;
+        padding:14px 20px;
+        border: unset;
+    }
+    .input-group button
+    {
+        width: 100%;
+        padding:14px 20px;
+        border: unset;
+        margin-top: 30px;
+    }
+    .footer
+    {
+        padding:140px 30px 80px;
+    }
+    .footer-contact .row
+    {
+        flex-direction: column;
+    }
+    .contact-item-group
+    {
+        display: block;
+    }
+    .contact-item
+    {
+        margin-bottom: 40px;
+    }
+    .contact-item-group img
+    {
+        width: 20px;
+        height: 20px;
+    }
+}
