@@ -280,9 +280,9 @@
     }
     .mobile-navbar
     {
-        display: flex;
+        display: flex !important;
         justify-content: space-between;
-        padding:25px 40px;
+        padding:20px 40px;
     }
     .mobile-navbar img
     {
